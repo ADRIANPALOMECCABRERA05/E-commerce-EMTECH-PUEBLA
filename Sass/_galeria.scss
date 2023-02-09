@@ -1,22 +1,30 @@
+@use "variables";
 @import url('https://fonts.googleapis.com/css2? family=Kumbh+Sans:wght@400;700&display=swap');
+
 
 h1{
     color: white;
     text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
     text-align: center;
     font-weight: 700;
+    &:hover{
+        cursor: pointer;
+        color: variables.$color-1;
+    }
 }
 
 div.galeria{
     margin: 10px 20px;
-    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 variables.$color-1, 0 6px 20px 0 rgba(0,0,0,0.19);
     float: left;
-    width: 350px;
+    width: 300px;
+    cursor: pointer;
 }
 
 div.galeria img{
+    //border: 1px solid black;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 div.galeria:hover{
@@ -27,7 +35,7 @@ div.galeria:hover{
 
 div.piedefoto{
     text-align: center;
-    text-shadow: 2px 2px 5px purple;
+    text-shadow: 2px 2px 5px variables.$color-6;
 }
 
 .titulo{
@@ -42,3 +50,4 @@ div.piedefoto{
     justify-content: center;
     text-align: center;
 }
+
