@@ -1,0 +1,54 @@
+@use "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.gallery{
+    padding: 10px ;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: variables.$color-1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+    
+}
+//vertical
+.v-stretch{
+    grid-row: span 2;
+}
+//horizontal
+.h-stretch{
+    grid-column: span 2;
+}
+//horizontal y vertical
+.big-stretch{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+//responsive
+@media(max-width: 560px)
+{
+    .v-stretch{
+        grid-row: span 1;
+    }
+    .h-stretch{
+        grid-column: span 1;
+    }
+    .big-stretch{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}

@@ -1,6 +1,7 @@
 @use "galeria";
 @use "variables";
 @use "secciones";
+@use "grid";
 
 
 .main-container{
@@ -12,3 +13,4 @@
             width: 1115px;
         }
 }
+
