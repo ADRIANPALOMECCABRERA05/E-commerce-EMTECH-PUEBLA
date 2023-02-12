@@ -204,6 +204,24 @@ footer {
   margin-bottom: 40px;
 }
 
+body {
+  background-color: #b2babb;
+}
+
+header {
+  z-index: 100;
+}
+
+.description {
+  height: 25px;
+  overflow: hidden;
+  transition: height 0.3s ease-in 0.3s;
+}
+
+.description:hover {
+  height: 80px;
+}
+
 .main-container {
   width: 375px;
   margin: auto;
