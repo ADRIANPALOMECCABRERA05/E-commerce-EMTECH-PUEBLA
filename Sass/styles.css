@@ -70,7 +70,6 @@ div.piedefoto {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  background: #b2babb;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -222,10 +221,41 @@ header {
   height: 80px;
 }
 
+.carrito {
+  min-height: 81vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table__productos {
+  display: flex;
+}
+
+.table__productos > img {
+  width: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.table__cantidad > input {
+  width: 40px;
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
 .main-container {
   width: 375px;
   margin: auto;
   position: relative;
+  background-color: white;
+  margin-top: 20px;
 }
 @media (min-width: 1115px) {
   .main-container {
