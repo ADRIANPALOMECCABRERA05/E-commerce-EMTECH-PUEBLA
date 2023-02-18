@@ -1,237 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La fonda de mamá</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-    crossorigin="anonymous"
-    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Sass/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>La Fonda de mamá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./Sass/styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+        />
 </head>
 <body>
-<main class="main-container">
-
-<header class="container-fluid bg-dark position-sticky top 0">
-
-    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-        <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-        </li>
-        <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</button>
-        </li>
-        <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</button>
-        </li>
-
-    </ul>
-</header>
-
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" 
-tabindex="0">1</div>
-        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <h2 class="h4 m-4 text-primary">
-                Productos
-            </h2>
-    <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
-        <div class="col d-flex justify-content-center-mb-4">
-            <div class="card shadow mb-1 bg-white rounded " style="width: 20rem;">
-                <h5 class="card-title pt-2 text-center-primary">Card title 1</h5>
-                <img src="./imagenes/chapulines.jpg" class="card-img-top" alt="...">
-                <div class="card-body  ">
-                <p class="card-text text-dark-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="text-primary">
-                    Precio: <span class="precio"> $ 5</span>
-                </h5>
-                <div class="d-grid gap-2">
-                <a href="#" class="btn btn-primary button">Añadir a carrito</a>
-            </div>
-                </div>
-            </div>
+    
+    <header id="header">
+        <h1>Shopping Car</h1>
+        <div>
+            <img id="carrito" class="carrito" src="./imagenes/carrito-de-compras.png" alt="">
+            <div id="numero"></div>
         </div>
-    </div>
-    <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
-        <div class="col d-flex justify-content-center-mb-4">
-            <div class="card shadow mb-1 bg-white rounded " style="width: 20rem;">
-                <h5 class="card-title pt-2 text-center-primary">Card title 2</h5>
-                <img src="./imagenes/flordecalabaza.jpg" class="card-img-top" alt="...">
-                <div class="card-body  ">
-                <p class="card-text text-dark-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="text-primary">
-                    Precio: <span class="precio"> $ 5</span>
-                </h5>
-                <div class="d-grid gap-2">
-                <a href="#" class="btn btn-primary button">Añadir a carrito</a>
-            </div>
-                </div>
-            </div>
+    </header>
+
+    <main>
+        <div id="contenedor" class="contenedor"> </div>
+    </main>
+    
+    <div id="contenedorCompra">
+        <div class="informacionCompra" id="informacionCompra">
+            <h2>Cesta</h2>
+            <p class="x" id="x">x</p>
         </div>
-    </div>
-    <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
-        <div class="col d-flex justify-content-center-mb-4">
-            <div class="card shadow mb-1 bg-white rounded " style="width: 20rem;">
-                <h5 class="card-title pt-2 text-center-primary">Card title 3</h5>
-                <img src="./imagenes/PAN DE YEMA.jpg" class="card-img-top" alt="...">
-                <div class="card-body  ">
-                <p class="card-text text-dark-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="text-primary">
-                    Precio: <span class="precio"> $ 5</span>
-                </h5>
-                <div class="d-grid gap-2">
-                <a href="#" class="btn btn-primary button">Añadir a carrito</a>
-            </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-cols-sm-1 row row-cols-md-2 row row-cols-lg-3 row row-cols-xl-4">
-        <div class="col d-flex justify-content-center-mb-4">
-            <div class="card shadow mb-1 bg-white rounded " style="width: 20rem;">
-                <h5 class="card-title pt-2 text-center-primary">Card title</h5>
-                <img src="./imagenes/tlayudas.jpg" class="card-img-top" alt="...">
-                <div class="card-body  ">
-                <p class="card-text text-dark-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="text-primary">
-                    Precio: <span class="precio"> $ 5</span>
-                </h5>
-                <div class="d-grid gap-2">
-                <a href="#" class="btn btn-primary button">Añadir a carrito</a>
-            </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-
-<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-
-    <br>
-
-    <table class="table">
-        <thead>
-        <tr class="text-primary">
-            <th scope="col">#</th>
-            <th scope="col">Productos</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td class="table__productos">
-                <img src="./imagenes/chapulines.jpg" alt="">
-                <h6 class="title"></h6>
-            </td>
-
-            <td class="table__price"><p>$ 5</p></td>
-            <td class="table__cantidad">
-                <input type="number" min="1" value="1">
-                <button class="delete btn btn-danget">X</button>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-    <br><br>
-    <div class="row mx-4">
-        <div class="col">
-            <h3 class="itemCartTotal">Total: 0 </h3>
-            </div>
-            <div class="col d-flex justify-content-end">
-                <button class="btn btn-success">Comprar</button>
-            </div>
-        </div>
+        <div class="productosCompra" id="productosCompra"></div>
+        <div class="total" id="total"></div>
+        <button>Finalizar Compra</button>
     </div>
 
-
-
-</div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-<script src="./JS/scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"
-    ></script>
+    <script src="main.js"></script>
     <footer>
         <div class="footer-content">
             <h3>La Fonda De Mamá</h3>
@@ -245,6 +63,7 @@ tabindex="0">1</div>
                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                 <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
             </ul>
         </div>
         <div class="socials">

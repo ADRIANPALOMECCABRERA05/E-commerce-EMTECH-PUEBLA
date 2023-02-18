@@ -204,53 +204,6 @@ footer {
 }
 
 body {
-  background-color: #b2babb;
-}
-
-header {
-  z-index: 100;
-}
-
-.description {
-  height: 25px;
-  overflow: hidden;
-  transition: height 0.3s ease-in 0.3s;
-}
-
-.description:hover {
-  height: 80px;
-}
-
-.carrito {
-  min-height: 81vh;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.table__productos {
-  display: flex;
-}
-
-.table__productos > img {
-  width: 9rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 6px;
-  margin-right: 20px;
-}
-
-.table__cantidad > input {
-  width: 40px;
-  border: none;
-  outline: 0;
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 30px;
-  margin-bottom: 20px;
-}
-
-body {
   background: url("http://cdn.wallpapersafari.com/13/6/Mpsg2b.jpg");
   margin: 0px;
   font-family: "Ubuntu", sans-serif;
@@ -351,6 +304,10 @@ h1, h2, h3, h4, h5, h6, a {
     margin-bottom: 10px;
   }
 }
+maincontainer {
+  background-color: transparent;
+}
+
 .main-container {
   width: 375px;
   margin: auto;
